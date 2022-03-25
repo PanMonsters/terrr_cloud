@@ -108,9 +108,5 @@ resource "yandex_compute_instance" "vm_for_each" {
     nat       = true
     ipv6      = false
  }
-
-  metadata = {
-    ssh-keys = "ubuntu:${file("/home/panmonster/.ssh/id_rsa.pub")}"
-  }
 }
 
