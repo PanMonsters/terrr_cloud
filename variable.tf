@@ -1,7 +1,3 @@
-variable "yc_token" {
-   default = <TOKEN>
-}
-
 variable "yc_cloud_id" {
   default = "b1g68ds3sdueu85f8rkf"
 }
