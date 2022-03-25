@@ -72,10 +72,6 @@ resource "yandex_compute_instance" "vm" {
     nat       = true
     ipv6      = false
  }
-
-  metadata = {
-    ssh-keys = "ubuntu:${file("/home/panmonster/.ssh/id_rsa.pub")}"
-  }
 }
 
 # Виртуальная машина
